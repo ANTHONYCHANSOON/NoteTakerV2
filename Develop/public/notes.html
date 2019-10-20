@@ -7,24 +7,63 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Note Taker</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-  <div class = "note-title">
+
+  <button id="saveNotebtn" type="button" class="btn btn-success">save button</button>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul id="activenoteslist">
+          <!-- <button id="pleaseworkbtn" type="button" data-name = "test123">test123</button> -->
+        </ul>
+
+      </div>
+      <div class="col">
+        <input id="titleinput" class="form-control form-control-lg" type="text" placeholder="note title">
+        <input id="textinput" class="form-control form-control-lg" type="text" placeholder="note text">
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="note-title">
 
   </div>
-  <div class = "note-textarea">
 
-  </div>
-  <p class = "list-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <ul class="list-group">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
 
-  </p>
+      </div>
+      <div class="col-sm">
+        <div class="note-textarea">
+
+        </div>
+
+      </div>
+
+    </div>
+  </div> -->
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
   <script src="/assets/js/index.js"></script>
 </body>
 

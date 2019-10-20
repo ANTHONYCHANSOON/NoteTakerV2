@@ -8,7 +8,7 @@ app.use(express.json());
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
-app.use(express.static('Develop/public'));
+app.use(express.static('public'));
 
 app.listen(PORT, function() {
     console.log("localhost:"+PORT);
