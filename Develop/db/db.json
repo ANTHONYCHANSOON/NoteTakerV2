@@ -1,1 +1,18 @@
-[{"title":"Title1","text":"text1"},{"title":"hello","text":"world"},{"title":"sushi","text":"sashimi"}]
+[
+    {
+        "title": "bling",
+        "text": "bling"
+    },
+    {
+        "title": "green",
+        "text": "lantern"
+    },
+    {
+        "title": "super",
+        "text": "man"
+    },
+    {
+        "title": "flash",
+        "text": "me"
+    }
+]
