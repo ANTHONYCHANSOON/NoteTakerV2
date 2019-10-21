@@ -1,1 +1,26 @@
-[{"title":"flash","text":"me"},{"title":"green","text":"lantern"},{"title":"green","text":"peas"},{"title":"grocery","text":"list"},{"title":"watch","text":"me"},{"title":"LAL","text":"Lakers"}]
+[
+    {
+        "title": "flash",
+        "text": "me"
+    },
+    {
+        "title": "green",
+        "text": "lantern"
+    },
+    {
+        "title": "green",
+        "text": "peas"
+    },
+    {
+        "title": "grocery",
+        "text": "list"
+    },
+    {
+        "title": "watch",
+        "text": "me"
+    },
+    {
+        "title": "LAL",
+        "text": "Lakers"
+    }
+]
