@@ -68,3 +68,31 @@ html, body {
   padding: 20px;
   cursor: pointer;
 }
+
+#header{
+  height:60px;
+  width: 100%;
+  padding-top: 15px;
+  background-color: dimgray;
+  color:white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#textinput{
+  height : 400px;
+}
+#startbuttondiv {
+  
+  width: 100%;
+  text-align: center;
+}
+#letsstartbutton {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: dimgray;
+  color:white;
+  margin-top: 20px;
+  padding: 30px;
+}

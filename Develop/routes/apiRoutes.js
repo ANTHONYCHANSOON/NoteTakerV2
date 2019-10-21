@@ -37,22 +37,16 @@ module.exports = function (app) {
         res.json(noteData);
     })
 
-    // app.delete("/api/notes/:title", function (req, res) {
-    //     // var deletednote = noteData.find(c => c.title !== req.params.title);
-    //     // console.log(deletednote);
-    //     // let index = noteData.indexof(deletednote);
-    //     // noteData.splice(index, 1);
+    app.delete("/api/notes/:title", function (req, res) {
 
-    //     let filteredarray = arraytest.filter(x => x.title !== req.params.title);
-        
-    //     // console.log(filteredarray);
-    //     // let stringdata = JSON.stringify(filteredarray)
+        let filteredarray = noteData.filter(x => x.title !== req.params.title);
+        let parsedata = JSON.stringify(filteredarray);
 
-    //     fs.writeFile("./db/db.json", filteredarray, (err) => {
-    //         if (err) throw err;
-    //         console.log("success")
-    //     })
+        fs.writeFile("./db/db.json", parsedata, (err) => {
+            if (err) throw err;
+            console.log("success")
+        })
 
-    //     res.json(filteredarray);
-    // })
+        res.json(noteData);
+    })
 }
