@@ -29,7 +29,8 @@ function saveNote2() {
 function renderNoteList2() {
     $.get("/api/notes", function (data) {
 
-        $("#activenoteslist").empty();
+        $("#activenoteslist1").empty();
+        $("#activenoteslist2").empty();
         for (let i = 0; i < data.length; i++) {
 
             let newlist = $("<button>");
@@ -40,15 +41,15 @@ function renderNoteList2() {
             newlist.attr("data-name", data[i].title);
             //newlist.attr("type", "button");
             newlist.text(data[i].title);
-            $("#activenoteslist").append(newlist);
+            $("#activenoteslist1").append(newlist);
 
             let deletebtn = $("<button>");
             deletebtn.addClass("list-group-item");
             deletebtn.addClass("float-right");
             deletebtn.attr("id", "deletebtn");
             deletebtn.attr("data-name", data[i].title);
-            deletebtn.text("Erase?");
-            $("#activenoteslist").append(deletebtn);
+            deletebtn.text("X");
+            $("#activenoteslist2").append(deletebtn);
 
         }
     })
@@ -69,7 +70,7 @@ function renderActiveNote2(xyz) {
 }
 
 function deletenote2(xyz) {
-    alert(xyz);
+    //alert(xyz);
 
     // $.ajax({
     //     url: "/api/notes/:title",
@@ -83,9 +84,9 @@ function deletenote2(xyz) {
     $.ajax({
         url: "/api/notes/" + xyz,
         method: "DELETE",
-        success: function () {
-            alert("note deleted");
-        }
+        // success: function () {
+        //     alert("note deleted");
+        // }
     })
     // $.delete("/api/notes/" + xyz)
     // .then(function(data){

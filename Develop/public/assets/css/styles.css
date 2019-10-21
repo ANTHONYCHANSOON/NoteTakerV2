@@ -96,3 +96,8 @@ html, body {
   margin-top: 20px;
   padding: 30px;
 }
+.lead {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}

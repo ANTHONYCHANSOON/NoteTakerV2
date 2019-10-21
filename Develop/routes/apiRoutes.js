@@ -36,28 +36,21 @@ module.exports = function (app) {
         
     app.delete("/api/notes/:title", function (req, res) {
 
-        let filteredarray = noteData.filter(x => x.title !== req.params.title);
-        let parsedata = JSON.stringify(filteredarray);
+        noteData  = noteData.filter(x => x.title !== req.params.title);
+        let parsedata = JSON.stringify(noteData);
 
         fs.writeFile("./db/db.json", parsedata, (err) => {
             if (err) throw err;
-            console.log("Delete success");
+            //console.log("Delete success");
 
-            let newnotedata;
+            // let newnotedata;
 
-            fs.readFile("./db/db.json", "utf8", function (err, data) {
-                if (err) throw err;
+            // fs.readFile("./db/db.json", "utf8", function (err, data) {
+            //     if (err) throw err;
 
-                newnotedata = JSON.parse(data);
-                console.log("newnotedata", newnotedata);
-
-                app.get("/api/notes", function (req, res) {
-                    
-                    res.json(newnotedata);
-                    console.log("Get Success/delete");
-                });
-                res.json(newnotedata);  
-            })
+            //     newnotedata = JSON.parse(data);
+            //     //console.log("newnotedata", newnotedata);
+            // })
             //res.json(filteredarray);
         })
 
